@@ -8,7 +8,7 @@ end
 5.times do |skill|
   Skill.create!(
     title: "Rails #{skill}",
-    percent_utilized: 15
+    percentage: 15
   )
 end
 
