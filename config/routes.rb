@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+
   resources :users
   resources :portfolios, except: [:show]
 
+  get 'web-apps', to: 'portfolios#web_apps'
+  get 'mobile-apps', to: 'portfolios#mobile_apps'
 
   get 'portfolio', to: 'portfolios#index', as: 'portfolio_index'
   get 'project/:id', to: 'portfolios#show', as: 'portfolio_show'
