@@ -4,7 +4,7 @@ class Portfolio < ApplicationRecord
   scope :web_app_portfolio_items, -> { where(subtitle: 'Ruby on Rails') &&  where(subtitle: 'Javascript')}
   scope :mobile_app_portfolio_items, -> { where(subtitle: 'Mobile App') }
   
-  # Occurs right after 'new' method in controller has run.
+  # Occurs right after 'new' method in controller has run. This is a callback.
   after_initialize :set_defaults
   #Note, 'after_create' happens after 'create' method has run.
 
