@@ -19,7 +19,7 @@ end
   )
 end
 
-6.times do |item|
+3.times do |item|
   Portfolio.create!(
     title: "Title #{item}",
     subtitle: "Ruby on Rails",
@@ -32,7 +32,17 @@ end
 3.times do |item|
   Portfolio.create!(
     title: "Title #{item}",
-    subtitle: "React",
+    subtitle: "Javascript",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    main_image: "http://placehold.it/600x400",
+    thumb_image: "http://placehold.it/350x200",
+  )
+end
+
+3.times do |item|
+  Portfolio.create!(
+    title: "Title #{item}",
+    subtitle: "Computer Science",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     main_image: "http://placehold.it/600x400",
     thumb_image: "http://placehold.it/350x200",
