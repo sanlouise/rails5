@@ -7,6 +7,18 @@ class BlogsController < ApplicationController
     @blogs = Blog.all
   end
 
+  def ruby_on_rails
+    @blogs = Blog.ruby_on_rails_blog_post
+  end
+
+  def javascript
+    @blogs = Blog.javascript_blog_post
+  end
+
+  def computer_science
+    @blogs = Blog.computer_science_blog_post
+  end
+
   # GET /blogs/1
   # GET /blogs/1.json
   def show
