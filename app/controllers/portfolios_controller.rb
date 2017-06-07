@@ -4,6 +4,14 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def web_apps
+    @portfolio_items = Portfolio.web_app_portfolio_items
+  end
+
+  def mobile_apps
+    @portfolio_items = Portfolio.mobile_app_portfolio_items
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
